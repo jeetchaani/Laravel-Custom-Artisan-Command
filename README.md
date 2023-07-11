@@ -3,10 +3,12 @@
      <code>
          php artisan make:command CustomCommand
      </code>
+     <br/>
 2) Define the Command Signature and Description in **app/Console/Commands/CustomCommand.php**
         <code>
                   protected $signature = 'app:user {id}';
         </code>
+      <br/>  
 3) Edit the command class in CustomCommand.php
 <code>
    public function handle()
@@ -16,6 +18,7 @@
         $this->info($user);
     }  
 </code>
+<br/>
 4) Run the command-- 
 <code>
    php artisan app:user 1
