@@ -13,6 +13,7 @@
 <code>
    public function handle()
     {
+      //put your command logic here
         $id = $this->argument('id');
         $user=User::find($id)->first();
         $this->info($user);
