@@ -6,15 +6,16 @@
       protected $signature = 'app:user {id}';
       <br/>
 3) Edit the command class in CustomCommand.php
-
-  public function handle()
+<code>
+   public function handle()
     {
         $id = $this->argument('id');
         $user=User::find($id)->first();
         $this->info($user);
-    }
-
-4) Run the command--
+    }  
+</code>
+ 
+4) Run the command-- <br/>
    php artisan app:user 1
    
    
