@@ -1,6 +1,6 @@
 <h3>Create Custom Artisan Command In Laravel--</h3>
 1)  Create the Command Class using --<br/>
-     <b>php artisan make:command CustomCommand</b>
+     <b>php artisan make:command CustomCommand</b><br/>
 2) Define the Command Signature and Description in **app/Console/Commands/CustomCommand.php**
      <br/>
       protected $signature = 'app:user {id}';
